@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparación de memorias RAM DDR1 - DDR5</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #101827;
+        color: #f1f5f9;
+        padding: 30px;
+    }
+
+    header {
+        text-align: center;
+        padding: 35px 15px;
+        background: linear-gradient(135deg, #eb25d7, #7c3aed);
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        color: #e0e7ff;
+    }
+
+    h2 {
+        margin: 25px 0 15px;
+        color: #60a5fa;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        background: #1e293b;
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 850px;
+    }
+
+    th {
+        background: #eb25cd;
+        color: white;
+        padding: 15px;
+    }
+
+    td {
+        padding: 14px;
+        text-align: center;
+        border-bottom: 1px solid #334155;
+    }
+
+    tr:hover {
+        background: #334155;
+    }
+
+    .ddr1 { color: #f87171; font-weight: bold; }
+    .ddr2 { color: #fb923c; font-weight: bold; }
+    .ddr3 { color: #facc15; font-weight: bold; }
+    .ddr4 { color: #4ade80; font-weight: bold; }
+    .ddr5 { color: #fa60f5; font-weight: bold; }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        border-top: 4px solid #f63bbb;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        margin-bottom: 12px;
+        font-size: 22px;
+    }
+
+    .card p {
+        margin: 9px 0;
+        color: #cbd5e1;
+        font-size: 14px;
+    }
+
+    .conclusion {
+        margin-top: 30px;
+        padding: 25px;
+        background: #1e293b;
+        border-radius: 12px;
+        border-left: 5px solid #22c55e;
+        line-height: 1.7;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #94a3b8;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Generaciones de Memoria RAM</h1>
+    <p>Comparación tecnológica desde DDR1 hasta DDR5</p>
+</header>
+
+<h2>Tabla comparativa</h2>
+
+<div class="table-container">
+<table>
+    <thead>
+        <tr>
+            <th>Generación</th>
+            <th>Año aproximado</th>
+            <th>Frecuencia efectiva</th>
+            <th>Voltaje</th>
+            <th>Ancho de banda</th>
+            <th>Prefetch</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="ddr1">DDR1</td>
+            <td>2000</td>
+            <td>200 - 400 MT/s</td>
+            <td>2.5 V</td>
+            <td>1.6 - 3.2 GB/s</td>
+            <td>2n</td>
+        </tr>
+
+        <tr>
+            <td class="ddr2">DDR2</td>
+            <td>2003</td>
+            <td>400 - 1066 MT/s</td>
+            <td>1.8 V</td>
+            <td>3.2 - 8.5 GB/s</td>
+            <td>4n</td>
+        </tr>
+
+        <tr>
+            <td class="ddr3">DDR3</td>
+            <td>2007</td>
+            <td>800 - 2133 MT/s</td>
+            <td>1.5 V</td>
+            <td>6.4 - 17 GB/s</td>
+            <td>8n</td>
+        </tr>
+
+        <tr>
+            <td class="ddr4">DDR4</td>
+            <td>2014</td>
+            <td>1600 - 3200 MT/s</td>
+            <td>1.2 V</td>
+            <td>12.8 - 25.6 GB/s</td>
+            <td>8n</td>
+        </tr>
+
+        <tr>
+            <td class="ddr5">DDR5</td>
+            <td>2020</td>
+            <td>3200 - 6400 MT/s</td>
+            <td>1.1 V</td>
+            <td>25.6 - 51.2 GB/s</td>
+            <td>16n</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<h2>Características de cada generación</h2>
+
+<div class="cards">
+
+    <div class="card" style="border-color:#f87171">
+        <h3 class="ddr1">DDR1</h3>
+        <p><b>Primera generación</b></p>
+        <p>• Introducida alrededor del año 2000.</p>
+        <p>• Bajo rendimiento comparado con las actuales.</p>
+        <p>• Voltaje de 2.5 V.</p>
+        <p>• Utilizada en computadoras antiguas.</p>
+    </div>
+
+    <div class="card" style="border-color:#fb923c">
+        <h3 class="ddr2">DDR2</h3>
+        <p><b>Mayor velocidad</b></p>
+        <p>• Introducida alrededor de 2003.</p>
+        <p>• Mejor eficiencia energética.</p>
+        <p>• Voltaje de 1.8 V.</p>
+        <p>• Mayor velocidad de transferencia.</p>
+    </div>
+
+    <div class="card" style="border-color:#facc15">
+        <h3 class="ddr3">DDR3</h3>
+        <p><b>Más rendimiento</b></p>
+        <p>• Introducida alrededor de 2007.</p>
+        <p>• Menor consumo energético.</p>
+        <p>• Voltaje estándar de 1.5 V.</p>
+        <p>• Muy utilizada en computadoras de su época.</p>
+    </div>
+
+    <div class="card" style="border-color:#de4ad4">
+        <h3 class="ddr4">DDR4</h3>
+        <p><b>Alta eficiencia</b></p>
+        <p>• Introducida alrededor de 2014.</p>
+        <p>• Voltaje estándar de 1.2 V.</p>
+        <p>• Mayor capacidad y velocidad.</p>
+        <p>• Muy utilizada en PC modernas.</p>
+    </div>
+
+    <div class="card" style="border-color:#fa60e5">
+        <h3 class="ddr5">DDR5</h3>
+        <p><b>Nueva generación</b></p>
+        <p>• Lanzada comercialmente en 2021.</p>
+        <p>• Voltaje estándar de 1.1 V.</p>
+        <p>• Mayor ancho de banda.</p>
+        <p>• Dos subcanales independientes de 32 bits por módulo.</p>
+    </div>
+
+</div>
+
+<h2>Conclusión</h2>
+
+<div class="conclusion">
+    <p>
+        La memoria RAM ha evolucionado considerablemente desde DDR1
+        hasta DDR5. Cada generación ha mejorado la velocidad de
+        transferencia de datos, el ancho de banda y la eficiencia
+        energética.
+    </p>
+
+    <p>
+        DDR1 y DDR2 pertenecen a generaciones antiguas, mientras que
+        DDR3 y DDR4 fueron utilizadas ampliamente en computadoras
+        personales. DDR5 ofrece un mayor rendimiento y ancho de banda,
+        siendo una tecnología adecuada para equipos modernos y tareas
+        exigentes.
+    </p>
+
+    <p>
+        <strong>Importante:</strong> Las generaciones DDR no son
+        físicamente compatibles entre sí. Cada una utiliza diferentes
+        especificaciones y conexiones.
+    </p>
+</div>
+
+<footer>
+    Proyecto educativo de Hardware y Arquitectura de Computadoras
+    <br>
+    Comparación de memorias RAM DDR1 - DDR5
+</footer>
+
+</body>
+</html>
